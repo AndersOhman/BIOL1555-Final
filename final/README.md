@@ -1,6 +1,9 @@
 ## CancerGeneTrials.jl README
 This is a final course project for Methods in Informatics and Data Science for Health (BIOL 1555), a course at Brown University in the Spring 2018 semester.
 
+### READ FIRST!!!
+This code was developed in the Spring of 2018, using Julia 0.6. Julia has since been updated to 1.0, which has created a number of incompatibilities with syntax and packages. This script should still work under [Julia 0.7 transitional release](https://julialang.org/downloads/oldreleases/#v070_aug_8_2018).
+
 ### Core Concept
 The idea behind the project is to locate cancer-related clinical trials involving genes that may play a role in additional cancers, and identify that set to inform potential blindspots in existing therapies or those under investigation. It accomplishes this by gathering data from the NIH resource The Cancer Genome Atlas on a per-cancer basis, combines all individual cancers into a master list, and queries the NIH resource ClinicalTrials.gov for any trials matching that gene and any of the cancers. After this, it outputs potential interesting "misses" - that is, a list of cancers which are associated with a gene mutation that is under investigation in clinical trials for OTHER cancers.
 
